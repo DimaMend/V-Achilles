@@ -19,7 +19,7 @@
     "latest-version": "^5.1.0",
     "mongoose": "5.13.14",
     "morgan": "^1.10.0",
-    "passport": "^0.4.1",
+    "passport": "^0.6.0",
     "passport-github": "^1.1.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0"
