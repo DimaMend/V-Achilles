@@ -38,7 +38,7 @@ jobs:
           echo Downloading Mend CLI
           curl https://downloads.mend.io/cli/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
           echo run Mend reachability scan
-          mend dep -d baak-dataload-sql -r -u
+          mend dep -d ./baak-dataload-sql -r -u
           
       - name: Mend CLI Scan (Windows)
         if: matrix.os == 'windows-latest'
@@ -50,7 +50,7 @@ jobs:
           echo 'Downloading Mend CLI'
           curl https://downloads.mend.io/cli/windows_amd64/mend.exe -o mend.exe
           echo 'run Mend reachability scan'
-          .\mend.exe -d baak-dataload-sql -r -u
+          .\mend.exe -d .\baak-dataload-sql -r -u
 
       - name: Mend CLI Scan (MacOS)
         if: matrix.os == 'macos-latest'
@@ -62,4 +62,4 @@ jobs:
           echo 'Downloading Mend CLI'
           curl https://downloads.mend.io/cli/darwin_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
           echo 'run Mend reachability scan'
-          mend dep -d baak-dataload-sql -r -u
+          mend dep -d ./baak-dataload-sql -r -u
