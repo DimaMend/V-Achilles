@@ -1,0 +1,65 @@
+name: Mend CLI reachability scan
+
+on: workflow_dispatch
+
+jobs:
+  NPM-Scan:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node-version: ["12.x"]
+
+    steps:
+      - name: Checkout https://github.com/${{ github.repository }}@${{ github.ref }}
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: |
+          cd baak-dataload-sql
+          yarn install --only=prod
+        
+      - name: Mend CLI Scan (Ubuntu)
+        if: matrix.os == 'ubuntu-latest'
+        env:
+          MEND_EMAIL: ${{secrets.MEND_EMAIL}}
+          MEND_USER_KEY: ${{secrets.MEND_USER_KEY}}
+          MEND_URL: https://saas.mend.io
+        run: |
+          echo Downloading Mend CLI
+          curl https://downloads.mend.io/cli/linux_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
+          echo run Mend reachability scan
+          mend dep -r -u
+          
+      - name: Mend CLI Scan (Windows)
+        if: matrix.os == 'windows-latest'
+        env:
+          MEND_EMAIL: ${{secrets.MEND_EMAIL}}
+          MEND_USER_KEY: ${{secrets.MEND_USER_KEY}}
+          MEND_URL: https://saas.mend.io
+        run: |
+          echo 'Downloading Mend CLI'
+          curl https://downloads.mend.io/cli/windows_amd64/mend.exe -o mend.exe
+          echo 'run Mend reachability scan'
+          .\mend.exe dep -r -u
+
+      - name: Mend CLI Scan (MacOS)
+        if: matrix.os == 'macos-latest'
+        env:
+          MEND_EMAIL: ${{secrets.MEND_EMAIL}}
+          MEND_USER_KEY: ${{secrets.MEND_USER_KEY}}
+          MEND_URL: https://saas.mend.io
+        run: |
+          echo 'Downloading Mend CLI'
+          curl https://downloads.mend.io/cli/darwin_amd64/mend -o /usr/local/bin/mend && chmod +x /usr/local/bin/mend
+          echo 'run Mend reachability scan'
+          mend dep -r -u
