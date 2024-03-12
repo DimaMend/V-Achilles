@@ -30,7 +30,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Install dependencies
-        run: yarn install --only=prod
+        run: |
+          cd baak-dataload-sql
+          yarn install --only=prod
         
       - name: Mend CLI Scan (Ubuntu)
         if: matrix.os == 'ubuntu-latest'
