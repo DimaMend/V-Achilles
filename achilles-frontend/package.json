@@ -74,7 +74,7 @@
     "react-graph-vis": "^1.0.5",
     "react-redux": "^7.2.2",
     "react-refresh": "^0.8.3",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.0.0",
     "react-scroll": "^1.8.1",
     "redux": "^4.0.5",
     "redux-saga": "^1.1.3",
