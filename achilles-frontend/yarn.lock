@@ -4044,7 +4044,7 @@ d3-chord@3:
   dependencies:
     d3-path "1 - 3"
 
-"d3-color@1 - 3", d3-color@3, d3-color@^3.1.0:
+"d3-color@1 - 3", d3-color@3:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-3.1.0.tgz#395b2833dfac71507f12ac2f7af23bf819de24e2"
   integrity sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==
@@ -7415,7 +7415,7 @@ lower-case@^2.0.2:
 
 lru-cache@^6.0.0:
   version "6.0.0"
-  resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz#6d6fe6570ebd96aaf90fcad1dafa3b2566db3a94"
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
@@ -9767,9 +9767,9 @@ selfsigned@^2.0.1:
     node-forge "^1"
 
 semver-existing-max@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/semver-existing-max/-/semver-existing-max-1.0.0.tgz"
-  integrity sha512-+tn2VD203ztgGNren/5NU13rCvX67K0N+PGF/eViMsyqLY9cZQUFh9jGHIjlq4JwFh3QPcYv9S4Efm5nluZeGw==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/semver-existing-max/-/semver-existing-max-1.0.2.tgz#fed011d96787388d2cbbad2dace12a92928d122e"
+  integrity sha512-q98kcynWOUaaPMu0D3y0PUG8OyoGX4e9JTbAtz5A+7B+exlg2vV6XOae9SR7PzqzSDBiJ9a9py+aDKEGwb5x0A==
   dependencies:
     axios "^0.21.1"
     semver "^7.3.5"
@@ -9777,12 +9777,12 @@ semver-existing-max@^1.0.0:
 
 semver-max@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.npmjs.org/semver-max/-/semver-max-1.0.0.tgz"
-  integrity sha1-H6IcgLuNlxwx/LHVgLBayW6pu7I=
+  resolved "https://registry.yarnpkg.com/semver-max/-/semver-max-1.0.0.tgz#1fa21c80bb8d971c31fcb1d580b05ac96ea9bbb2"
+  integrity sha512-63Ppi7lcIWytyT23zTDiMi/wq6M6UdHf+133uJWPVDVHu2OPRCdfveC1X5KyX8HkYnS8YcLYgtQTohYkFXVpzA==
   dependencies:
     semver "^5.0.1"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
+"semver@2 || 3 || 4 || 5", semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
@@ -9791,6 +9791,11 @@ semver@7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/semver/-/semver-7.0.0.tgz"
   integrity sha512-+GB6zVA9LWh6zovYQLALHwv5rb2PHGlJi3lfiqIHxR0uuwCgefcOJc59v9fv1w8GbStwxuuqqAjI9NMAOOgq1A==
+
+semver@^5.0.1:
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.2.tgz#48d55db737c3287cd4835e17fa13feace1c41ef8"
+  integrity sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==
 
 semver@^6.0.0, semver@^6.3.0:
   version "6.3.0"
@@ -9805,11 +9810,9 @@ semver@^7.2.1, semver@^7.3.2, semver@^7.3.4:
     lru-cache "^6.0.0"
 
 semver@^7.3.5:
-  version "7.3.5"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.3.5.tgz"
-  integrity sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
-  dependencies:
-    lru-cache "^6.0.0"
+  version "7.7.3"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.3.tgz#4b5f4143d007633a8dc671cd0a6ef9147b8bb946"
+  integrity sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==
 
 send@0.18.0:
   version "0.18.0"
@@ -11482,7 +11485,7 @@ y18n@^4.0.0:
 
 yallist@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/yallist/-/yallist-4.0.0.tgz#9bb92790d9c0effec63be73519e11a35019a3a72"
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
 yaml@^1.10.2, yaml@^1.7.2:
