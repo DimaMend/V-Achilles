@@ -4044,7 +4044,7 @@ d3-chord@3:
   dependencies:
     d3-path "1 - 3"
 
-"d3-color@1 - 3", d3-color@3, d3-color@^3.1.0:
+"d3-color@1 - 3", d3-color@3:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-3.1.0.tgz#395b2833dfac71507f12ac2f7af23bf819de24e2"
   integrity sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==
@@ -9767,22 +9767,13 @@ selfsigned@^2.0.1:
     node-forge "^1"
 
 semver-existing-max@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/semver-existing-max/-/semver-existing-max-1.0.0.tgz"
-  integrity sha512-+tn2VD203ztgGNren/5NU13rCvX67K0N+PGF/eViMsyqLY9cZQUFh9jGHIjlq4JwFh3QPcYv9S4Efm5nluZeGw==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/semver-existing-max/-/semver-existing-max-1.0.4.tgz#90f0b20fe32842bccbeabe291e14327479df865b"
+  integrity sha512-6DjFKvEfswqgRH23bCAz/IAsjYO1F6RcbF78XnMazE5VxtwyVPJ/vnBN4CUeMjalARMjXqjTlojDzO25HI73Fw==
   dependencies:
-    axios "^0.21.1"
-    semver "^7.3.5"
-    semver-max "^1.0.0"
+    semver "^7.7.4"
 
-semver-max@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/semver-max/-/semver-max-1.0.0.tgz"
-  integrity sha1-H6IcgLuNlxwx/LHVgLBayW6pu7I=
-  dependencies:
-    semver "^5.0.1"
-
-"semver@2 || 3 || 4 || 5", semver@^5.0.1, semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
+"semver@2 || 3 || 4 || 5", semver@^5.4.1, semver@^5.5.0, semver@^5.5.1, semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
   integrity sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
@@ -9804,12 +9795,10 @@ semver@^7.2.1, semver@^7.3.2, semver@^7.3.4:
   dependencies:
     lru-cache "^6.0.0"
 
-semver@^7.3.5:
-  version "7.3.5"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.3.5.tgz"
-  integrity sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
-  dependencies:
-    lru-cache "^6.0.0"
+semver@^7.7.4:
+  version "7.7.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.7.4.tgz#28464e36060e991fa7a11d0279d2d3f3b57a7e8a"
+  integrity sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==
 
 send@0.18.0:
   version "0.18.0"
